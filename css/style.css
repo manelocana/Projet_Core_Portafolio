@@ -1,0 +1,49 @@
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background: whitesmoke;
+    color:black;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    background: rgb(136, 136, 246);
+    padding: 0rem 1rem;
+}
+
+.nav-brand {
+    font-size: 1.2rem;
+    color: chartreuse;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+    background: rgb(74, 74, 189);
+    border-radius: 6px;
+}
+
+.nav-search {
+    padding: 20px;
+}
