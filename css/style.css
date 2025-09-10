@@ -1,84 +1,181 @@
 
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    background: whitesmoke;
-    color:black;
+    margin: 0px;
 }
 
-.navbar {
+h1 {font-size: 3.5em;}
+h2 {font-size: 2.7em;}
+h3 {font-size: 2em;}
+p {font-size: 1.25em;}
+ul {list-style: none;}
+li {font-size: 1.2em;}
+
+button,
+.btn {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: 2px solid rgb(0,0,0, 0.3);
+    box-shadow: 2px 2px 10px rgb(0,0,0);
+    color:white;
+    background-color: rgb(116, 1, 178);
+}
+
+button:hover,
+.hero .btn:hover {
+    background-color: rgb(175, 0, 67);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: beige;
+}
+
+header .logo {
+    padding: 25px;
+    margin: 0;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.5em;
+}
+
+header .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    font-size: 1.2rem;
-    background: rgb(136, 136, 246);
-    padding: 0rem 1rem;
 }
 
-.nav-brand {
-    font-size: 1.2rem;
-    color: chartreuse;
-}
-
-.nav-links {
-    list-style: none;
+header nav {
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
 }
 
-.nav-links a {
-    color: white;
-    padding: 0.5rem;
+header a {
+    padding: 5px 12px;
     text-decoration: none;
-    transition: background 0.3s;
+    font-weight: bold;
+    color:black
 }
 
-.nav-links a:hover,
-.nav-links a:active {
-    background: rgb(74, 74, 189);
-    border-radius: 6px;
+header a:hover {
+    color: blue;
 }
 
-.nav-search {
-    padding: 20px;
+header .search {
+    margin-bottom: 50px;
 }
 
 .hero {
-    background: url("../img/img_desarrollo.jpeg") no-repeat center;
-    background-size: cover;
-    position: relative;
-    height: 500px;
-    background-color: black;
-
-}
-
-.hero-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    color:white;
+    flex-direction: column;
+    height: 90vh;
+    color:rgb(248, 248, 248);
+    background-image: linear-gradient(
+        rgb(0,0,0,0.5), /* esto es para oscurecer la imagen de fondo */
+        rgb(0,0,0,0.5)
+        )
+        ,url("../img/img_desarrollo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.hero-text a {
-    padding: 1rem 2rem;
-    text-decoration: none;
-    color:white;
-    margin-top: 2rem;
-    transition: background 0.3s;
-    border-style: solid;
-    border-radius: 6px;
+.banner, .banner a {
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+    padding: 3px;
 }
 
-.hero-text a:hover,
-.hero-text a:active {
-    background: rgb(212, 248, 105);
-    border-radius: 6px;
-    color: black;
-    transition: 0.3s;
+#cards {
+    background-color: rgb(30,30,30);
+    color: white;
+}
+
+#cards h2 {
+    text-align: center;
+    padding: 5px;
+}
+
+#cards .container {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#cards .card {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+#cards p {
+    display: none;
+}
+
+/* aqui hacemos una herencia con first-child */
+.card:first-child {
+    background-image: linear-gradient(
+        rgb(0,0,0,0.5), 
+        rgb(0,0,0,0.5)
+        )
+        ,url("../img/Branding-design.jpg");
+}
+
+/* aqui el segundo hijo */
+.card:nth-child(2) {
+    background-image: linear-gradient(
+        rgb(0,0,0,0.5), /* esto es para oscurecer la imagen de fondo */
+        rgb(0,0,0,0.5)
+        )
+        ,url("../img/website-development.png");
+}
+
+.card:nth-child(3) {
+    background-image: linear-gradient(
+        rgb(0,0,0,0.5), /* esto es para oscurecer la imagen de fondo */
+        rgb(0,0,0,0.5)
+        )
+        ,url("../img/illustration_modeling.jpeg");
+}
+
+.card:nth-child(4) {
+    background-image: linear-gradient(
+        rgb(0,0,0,0.5), /* esto es para oscurecer la imagen de fondo */
+        rgb(0,0,0,0.5)
+        )
+        ,url("../img/digital_marketing.jpeg");
+}
+
+.services .container {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.services .container li {
+    margin: 10px;
+    padding: 10px;
 }
