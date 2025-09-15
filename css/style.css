@@ -196,3 +196,20 @@ header .search {
     font-size: 1.2em;
     font-weight: bold;
 }
+
+.scroll_container {
+    overflow: auto;   
+    background-color: #333;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.scroll_container img {
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.img_scroll h2 {
+    text-align: center;
+}
