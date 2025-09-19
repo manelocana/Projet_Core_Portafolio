@@ -107,67 +107,67 @@ header .search {
     padding: 3px;
 }
 
-#cards {
+#cards .container > div,
+#cards_articles .container > div {
     background-color: rgb(30,30,30);
-    color: white;
-}
-
-#cards h2 {
-    text-align: center;
-    padding: 5px;
-}
-
-#cards .container {
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-}
-
-#cards .card {
+    position: relative;
+    z-index: 1;
     background-position: center center;
     background-size: cover;
     padding: 50px;
     margin: 20px;
     border-radius: 15px;
+    overflow: hidden;
+}
+
+#cards .container > div::before,
+#cards_articles .container > div::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 0;
+}
+
+#cards h2, #cards h3, #cards p, #cards button,
+#cards_articles h2, 
+#cards_articles h3,
+#cards_articles h4,
+#cards_articles p,
+#cards_articles button {
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+#cards .container, 
+#cards_articles .container {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
 }
 
 #cards p {
     display: none;
 }
 
-/* aqui hacemos una herencia con first-child */
-.card:first-child {
-    background-image: linear-gradient(
-        rgb(0,0,0,0.5), 
-        rgb(0,0,0,0.5)
-        )
-        ,url("../img/Branding-design.jpg");
+.card_desing{
+    background-image: url("../img/Branding-design.jpg");
 }
 
-/* aqui el segundo hijo */
-.card:nth-child(2) {
-    background-image: linear-gradient(
-        rgb(0,0,0,0.5), /* esto es para oscurecer la imagen de fondo */
-        rgb(0,0,0,0.5)
-        )
-        ,url("../img/website-development.png");
+.card_develope {
+    background-image: url("../img/website-development.png");;
 }
 
-.card:nth-child(3) {
-    background-image: linear-gradient(
-        rgb(0,0,0,0.5), /* esto es para oscurecer la imagen de fondo */
-        rgb(0,0,0,0.5)
-        )
-        ,url("../img/illustration_modeling.jpeg");
+.card_modelling {
+    background-image: url("../img/illustration_modeling.jpeg");
 }
 
-.card:nth-child(4) {
-    background-image: linear-gradient(
-        rgb(0,0,0,0.5), /* esto es para oscurecer la imagen de fondo */
-        rgb(0,0,0,0.5)
-        )
-        ,url("../img/digital_marketing.jpeg");
+.card_marketing {
+    background-image: url("../img/digital_marketing.jpeg");
 }
+
 
 .services .container {
     text-align: center;
@@ -216,5 +216,16 @@ header .search {
 
 .events {
     margin: 30px;
-    
+}
+
+.card_return {
+    background-image: url("../img/Branding-design.jpg");
+}
+
+.card_result {
+    background-image: url("../img/website-development.png");;
+}
+
+.card_usability {
+    background-image: url("../img/illustration_modeling.jpeg");
 }
