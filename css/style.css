@@ -107,9 +107,13 @@ header .search {
     padding: 3px;
 }
 
+#cards {
+    background-color: rgb(30,30,30);
+    color: white;
+}
+
 #cards .container > div,
 #cards_articles .container > div {
-    background-color: rgb(30,30,30);
     position: relative;
     z-index: 1;
     background-position: center center;
@@ -118,6 +122,7 @@ header .search {
     margin: 20px;
     border-radius: 15px;
     overflow: hidden;
+    color: white
 }
 
 #cards .container > div::before,
@@ -216,6 +221,10 @@ header .search {
 
 .events {
     margin: 30px;
+}
+
+#cards_articles {
+    background-color: aliceblue;
 }
 
 .card_return {
