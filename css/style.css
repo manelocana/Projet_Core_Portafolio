@@ -107,6 +107,11 @@ header .search {
     padding: 3px;
 }
 
+.banner p {
+    background-color: blue;
+    padding: 20px;
+}
+
 #cards {
     background-color: rgb(30,30,30);
     color: white;
@@ -130,7 +135,7 @@ header .search {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.5);
     z-index: 0;
 }
 
@@ -172,7 +177,6 @@ header .search {
 .card_marketing {
     background-image: url("../img/digital_marketing.jpeg");
 }
-
 
 .services .container {
     text-align: center;
