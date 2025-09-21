@@ -15,6 +15,8 @@ toute l'espace del container selons la proportion de pixelles sur l'ecran
 
 ------------------------------------------------------------------------------------------------------------------
 
+Je vais commencer pour le page 'home', je crois cest la plus complexe, une fois finis, les autres serais plus vite (c/p).
+
 Le header je vais le former avec une barre de navigation (navbar) et des liens (hypertexte) pour changer d'onglet/sections.
 Je fais apres un hero, comme presentation avec une img et un lien pour regarder les ouvres du portafolio.
 Un banner, pour montrer le contacte (address ,telf...)
