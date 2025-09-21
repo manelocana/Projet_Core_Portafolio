@@ -48,18 +48,19 @@ header {
     background-color: beige;
 }
 
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
 header .logo {
     padding: 25px;
     margin: 0;
     font-weight: bold;
     color: blueviolet;
     font-size: 1.5em;
-}
-
-header .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 header nav {
@@ -81,7 +82,17 @@ header a:hover {
 }
 
 header .search {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+header input {
+    padding: 5px;
+    margin: 10px;
+}
+
+header button {
+    font-size: 0.9em;
 }
 
 .hero {
@@ -112,6 +123,7 @@ header .search {
 .banner p {
     background-color: blue;
     padding: 20px;
+    margin-top: 60px;
 }
 
 #cards {
@@ -188,7 +200,7 @@ header .search {
     background-color: rgb(232, 255, 127);
 }
 
- .services img {
+.services img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -201,6 +213,8 @@ header .search {
 }
 
 .services li {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     margin: 10px;
     padding: 10px;
@@ -216,9 +230,9 @@ header .search {
 }
 
 .scroll_container img {
-    padding: 10px;
-    width: 200px;
-    height: 200px;
+    padding: 5px;
+    width: 250px;
+    height: 250px;
 }
 
 .img_scroll h2 {
@@ -251,13 +265,17 @@ header .search {
     text-align: center;
 }
 
-#footer form input {
+footer {
+    background-color:blanchedalmond;
+}
+
+footer form input {
     text-align: center;
     font-size: 1.3em;
     border-radius: 8px;
 }
 
-#footer nav a {
+footer nav a {
     display: flex;
     flex-direction: column;
     padding: 7px;
