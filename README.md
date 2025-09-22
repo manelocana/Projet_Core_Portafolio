@@ -10,12 +10,14 @@ Dans cette partie, je vais créer un site statique (ladingpage HTML+CSS).
 Je vais essayer de utiliser la semantique correcte pour html, en contant avec les bonnes practiques SEO, pour google.
 Aussi je le fais en mode responsive, pour resolutions mobile et pc
 
-Premier je vais commencer faire le mode mobile, adjuster tout a la petite resolution, et apres en ecran complet qui profite 
-toute l'espace del container selons la proportion de pixelles sur l'ecran
+Premier je vais commencer faire le resolution mobile (moins 768px), adjuster tout a la petite resolution, et apres en ecran complet qui profite 
+toute l'espace del container selons la proportion de pixelles sur l'ecran, grace a les media querys @media(taille min o max) {et les atributes css que on veu parametriser}
 
 ------------------------------------------------------------------------------------------------------------------
 
 Je vais commencer pour le page 'home', je crois cest la plus complexe, une fois finis, les autres serais plus vite (c/p).
+
+Je vais le faire style comme l'exemple del projet 2.
 
 Le header je vais le former avec une barre de navigation (navbar) et des liens (hypertexte) pour changer d'onglet/sections.
 Je fais apres un hero, comme presentation avec une img et un lien pour regarder les ouvres du portafolio.
