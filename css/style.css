@@ -39,8 +39,6 @@ button:hover,
 }
 
 .container {
-    max-width: 1400px;
-    margin: auto;
     padding: 20px;
 }
 
@@ -131,6 +129,11 @@ header button {
     color: white;
 }
 
+#cards h2 {
+    padding:20px;
+    text-align: center;
+}
+
 #cards .container > div,
 #cards_articles .container > div {
     position: relative;
@@ -153,7 +156,11 @@ header button {
     z-index: 0;
 }
 
-#cards h2, #cards h3, #cards p, #cards button,
+#cards_articles h2 {
+    color: black;
+}
+
+#cards h3, #cards p, #cards button,
 #cards_articles h2, 
 #cards_articles h3,
 #cards_articles h4,
@@ -212,14 +219,13 @@ header button {
     margin-bottom: 70px;
 }
 
-.services li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.services .services_list {
+    text-align: center;
     margin: 10px;
     padding: 10px;
     font-size: 1.2em;
     font-weight: bold;
+    line-height: 2.5em;
 }
 
 .scroll_container {
@@ -235,7 +241,7 @@ header button {
     height: 250px;
 }
 
-.img_scroll h2 {
+#img_scroll h2 {
     text-align: center;
 }
 
