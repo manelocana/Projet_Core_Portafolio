@@ -30,6 +30,7 @@ button {
     box-shadow: 2px 2px 10px rgb(0,0,0);
     color:white;
     background-color: rgb(116, 1, 178);
+    cursor: pointer;
 }
 
 button:hover {
@@ -92,7 +93,7 @@ header button {
 }
 
 .hero .container {
-    background-color: rgb(30,30,30);
+    background-color: black;
     color: white;
 }
 
@@ -106,7 +107,7 @@ header button {
 .banner, 
 .banner a, 
 .banner address {
-    background-color: rgb(30,30,30);
+    background-color: black;
     color: white;
     padding: 3px;
 }
@@ -119,13 +120,13 @@ header button {
 }
 
 #cards {
-    background-color: rgb(30,30,30);
     color: white;
 }
 
 #cards h2 {
     padding:20px;
     text-align: center;
+    color: black;
 }
 
 #cards .container > div,
@@ -311,22 +312,45 @@ footer nav a {
 
     .hero {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
         flex-direction: column;
+        justify-content: center;
         height: 90vh;
         color:rgb(248, 248, 248);
+        background-color:black;
         background-image: linear-gradient(
             rgb(0,0,0,0.5),
             rgb(0,0,0,0.5)
             )
             ,url("../img/img_desarrollo.jpeg");
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background-size: 60%;
+        background-position: right;
     }
 
+    .hero .container {
+        background-color:transparent;
+        text-align:left;
+        width: 40%;
+        margin-left: 100px;
+    }
+
+    .hero button {
+        margin: 20px;
+        margin-top: 50px;
+    }
+
+    .banner address {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        font-size: 1.3em;
+    }
+
+    .banner p {
+        padding: 30px;
+        font-size: 2em;
+        margin-bottom: 0px;
+    }
 
 
 }
