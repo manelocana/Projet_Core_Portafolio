@@ -21,7 +21,8 @@ p {font-size: 1.25em;}
 ul {list-style: none;}
 li {font-size: 1.2em;}
 
-button {
+button, 
+.hero a {
     font-size: 1.2em;
     font-weight: bold;
     padding: 10px 10px;
@@ -33,7 +34,8 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover, 
+.hero a:hover {
     background-color: rgb(175, 0, 67);
 }
 
@@ -279,7 +281,7 @@ header button {
     display: flex;
     flex-direction: column;
     padding: 7px;
-    font-size: bold;
+    font-weight: bold;
 }
 
 #footer .container small {
@@ -324,8 +326,8 @@ header button {
         color:rgb(248, 248, 248);
         background-color:black;
         background-image: linear-gradient(
-            rgb(0,0,0,0.2),
-            rgb(0,0,0,0.2)
+            rgb(0,0,0,0.1),
+            rgb(0,0,0,1)
             )
             ,url("../img/img_desarrollo.jpeg");
         background-repeat: no-repeat;
@@ -399,7 +401,6 @@ header button {
         width: 500px;
         height: 500px;
         border-radius: 50px;
-
     }    
 
     .events .container {
@@ -426,7 +427,6 @@ header button {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 4rem;
-        
     }   
 
     #footer .container_left {
@@ -452,6 +452,5 @@ header button {
         text-align: center;
         margin-top: 70px;
     }
-
 
 }
