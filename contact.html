@@ -77,12 +77,15 @@
                         Have Any Project on Your Mind?
                     </h2>
                     <p>Great! We're excited to hear from you and let's start something</p>
-                    <form>
+                    <form id="form_contact">
                         <input type="text" id="name" name="name" placeholder="Full name*">
-                        <input type="text" id="email" name="email" placeholder="Email address*">
-                        <input type="text" id="web" name="web" placeholder="Website link*">
-                        <input type="text" id="message" name="message" placeholder="How Can We Help You*">
+                        <input type="email" id="email" name="email" placeholder="Email address*">
+                        <input type="url" id="web" name="web" placeholder="Website link*">
+                        <textarea 
+                            id="message" name="message" placeholder="How Can We Help You*" rows="4">
+                        </textarea>
                     </form>
+                    <button form="form_contact" type="submit">SEND MESSAGE</button>
                 </div>
             </div>
         </section>
