@@ -70,17 +70,22 @@ form textarea {
     }
 
     #map_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        background-color: rgb(215, 233, 152);
+        padding: 50px;
+    }
+
+    #map_container iframe {
         width: 600px;
-        margin: auto;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        height: 600px;
     }
 
     #map_container h2 {
-        text-align: center;
+        display: none;
     }
 
-    .form_container {
-        
-    }
 }
