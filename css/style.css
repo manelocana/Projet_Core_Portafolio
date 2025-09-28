@@ -22,7 +22,8 @@ ul {list-style: none;}
 li {font-size: 1.2em;}
 
 button, 
-.hero a {
+.hero a,
+#map_container a {
     font-size: 1.2em;
     font-weight: bold;
     padding: 10px 10px;
@@ -35,7 +36,8 @@ button,
 }
 
 button:hover, 
-.hero a:hover {
+.hero a:hover
+#map_container a:hover {
     background-color: rgb(175, 0, 67);
 }
 

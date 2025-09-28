@@ -1,0 +1,54 @@
+
+
+.hero .container {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+#cards h2 {
+    display: none;
+}
+
+#cards p {
+    display: block;
+    font-size: 1.2em;
+    background-color:black;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+@media(min-width: 768px) {
+    .hero .container {
+        color: white;
+        background-color: transparent;
+        font-size: 2em;
+    }
+
+    #cards h2 {
+        display:block;
+        text-align: center;
+    }
+
+    #cards p {
+        text-align: center;
+    }
+
+    #map_container {
+        width: 600px;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    #map_container h2 {
+        text-align: center;
+    }
+
+}
