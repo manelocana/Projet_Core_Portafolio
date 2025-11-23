@@ -60,6 +60,11 @@ form textarea {
         font-size: 2em;
     }
 
+    .hero img {
+        display: block;
+        margin: auto;
+    }
+
     #cards h2 {
         display:block;
         text-align: center;

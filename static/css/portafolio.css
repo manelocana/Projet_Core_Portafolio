@@ -1,0 +1,30 @@
+
+
+
+.hero .container {
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+#cards_portafolio .container img {
+    max-width: 100%; 
+    border-radius: 8px;
+}
+
+#cards_portafolio .container > div {
+    margin-bottom: 150px;
+}
+
+
+@media(min-width: 768px) {
+    .hero .container {
+        background-color: transparent;
+        color: white;
+        font-size: 2em;
+    }
+
+    .hero img {
+        display: block;
+    }
+}
