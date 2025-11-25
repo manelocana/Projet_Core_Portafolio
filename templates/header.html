@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
-<body>
+
     <header>
         <div class="container">
             <p class="logo"><a href="{{ url_for('home') }}">LOGO WEB</a></p>
@@ -17,15 +9,19 @@
                 <a href="{{ url_for('blog') }}">BLOG</a>
                 <a href="{{ url_for('contact') }}">CONTACT</a>
             </nav>
-            <form class="search">
-                <input type="text" placeholder="search...">
-                <button type="submit">SEARCH</button>
-            </form>
+
+            {% if search_button %}
+                <form class="search">
+                    <input type="text" placeholder="search...">
+                    <button type="submit">SEARCH</button>
+                </form>
+            {% else %}
+                <form class="search">
+                    <button type="submit">WORK WITH US</button>
+                </form>
+            {% endif %}
+
         </div>
     </header>
 
-    <!-- ici on ouvre le div et on le ferme au footer -->
-    <div class="container">
-        <br>
-
-    
+   

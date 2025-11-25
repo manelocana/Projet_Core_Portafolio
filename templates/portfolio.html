@@ -1,75 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <p class="logo"><a href="home.html">LOGO WEB</a></p>
-            <nav>
-                <a href="home.html">HOME</a>
-                <a href="pages.html">PAGES</a>
-                <a href="portfolio.html">PORTAFOLIO</a>
-                <a href="blog.html">BLOG</a>
-                <a href="contact.html">CONTACT</a>
-            </nav>
-            <form class="search">
-                <button type="submit">WORK WITH US</button>
-            </form>
-        </div>
-    </header>
+
+{% extends 'index.html' %}
+
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}">
+{% endblock %}
+
+
+{% block content %}
 
     <main>
         <section>
             <div class="hero">
-                <img src="img/photo_devweb.jpg" alt="photo_computer">
+                <img src="{{ url_for('static', filename='img/photo_devweb.jpg') }}" alt="photo_computer">
                 <div class="container">
-                    <h2>Portafolio</h2>
+                    <h2>Portfolio</h2>
                 </div>
             </div>
         </section>
 
-        <section id="cards_portafolio">
+        <section id="cards_portfolio">
             <div class="container">
 
                 <div class="card_decentralized">
-                    <img src="img/Branding-design.jpg" alt="Branding-design">
+                    <img src="{{ url_for('static', filename='img/Branding-design.jpg') }}" alt="Branding-design">
                     <h3>Educational Platform</h3>
                     <h4>Branding/ Developement/ Marketing</h4>
                 </div>
 
                 <div class="card_appbusiness">
-                    <img src="img/devs_hablando.jpeg" alt="devs_hablando">
+                    <img src="{{ url_for('static', filename='img/devs_hablando.jpeg') }}" alt="devs_hablando">
                     <h3>Educational Platform</h3>
                     <h4>Branding/ Developement/ Marketing</h4>
                 </div>
 
                 <div class="card_website">
-                    <img src="img/digital_marketing.jpeg" alt="digital_marketing">
+                    <img src="{{ url_for('static', filename='img/digital_marketing.jpeg') }}" alt="digital_marketing">
                     <h3>Educational Platform</h3>
                     <h4>Branding/ Developement/ Marketing</h4>
                 </div>
 
                 <div class="card_novascotia">
-                    <img src="img/illustration_modeling.jpeg" alt="illustration_modeling">
+                    <img src="{{ url_for('static', filename='img/illustration_modeling.jpeg') }}" alt="illustration_modeling">
                     <h3>Educational Platform</h3>
                     <h4>Branding/ Developement/ Marketing</h4>
                 </div>
 
                 <div class="card_education">
-                    <img src="img/img_desarrollo.jpeg" alt="img_desarrollo">
+                    <img src="{{ url_for('static', filename='img/img_desarrollo.jpeg') }}" alt="img_desarrollo">
                     <h3>Educational Platform</h3>
                     <h4>Branding/ Developement/ Marketing</h4>
                 </div>
 
                 <div class="card_platform">
-                    <img src="img/photo_computer.jpg" alt="photo_computer">
+                    <img src="{{ url_for('static', filename='img/photo_computer.jpg') }}" alt="photo_computer">
                     <h3>Educational Platform</h3>
                     <h4>Branding/ Developement/ Marketing</h4>
                 </div>
@@ -78,47 +62,4 @@
         </section>
     </main>
 
-    <footer id="footer">
-        <div class="container">
-            <div class="container_left">
-                <h3>
-                    Get valuable strategy, culture and brand insights straight to your inbox
-                </h3>
-                
-                <form action="">
-                    <input type="text" id="email" name="email"  placeholder="Your email here:">
-                </form>
-
-                <p>
-                    By signing up to receive emails froms Motto, your agree
-                    to our Privacy Policy. We treat your info resposibily.
-                </p>
-
-                <h4 class="h4_contact">Contact</h4>
-                <address>
-                    27 Division St, New York,<br>
-                    NY 10002, Usa<br>
-                    <br>
-                    +1800123654987<br>
-                    <a href="emailto:987frisk.agency@mail.com">987frisk.agency@mail.com</a>
-                </address>
-            </div>
-
-            <div class="container_right">
-                <h4 class="h4_links">Links</h4>
-                <nav>
-                    <a href="#">About</a>
-                    <a href="#">Portafolio</a>
-                    <a href="#">Services</a>
-                    <a href="#">Testimonials</a>
-                    <a href="#">Careers</a>
-                </nav>
-            </div>
-
-            <small>Copyright C 2025 - manelocana.dev@gmail.com</small>
-
-        </div>
-    </footer>
-    
-</body>
-</html>
+{% endblock %}

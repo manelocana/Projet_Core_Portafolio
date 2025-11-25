@@ -1,170 +1,165 @@
 
-{% include 'header.html' %}
+{% extends 'index.html' %}
 
-    <main>
+{% block content %}
 
-        <section class="hero">
-            <img src="{{ url_for('static', filename='img/img_desarrollo.jpeg') }}" alt="img_desarrollo_web">
-            <div class="container">
-                <h1>WE MAKE CREATIVE THINGS EVERYDAY</h1>
-                <p>We are digital agency that helps immersive and engaging user experiences that</p>
-                <a href="#img_scroll">VIEW OUR WORKS</a>
+    <section class="hero">
+        <img src="{{ url_for('static', filename='img/img_desarrollo.jpeg') }}" alt="img_desarrollo_web">
+        <div class="container">
+            <h1>WE MAKE CREATIVE THINGS EVERYDAY</h1>
+            <p>We are digital agency that helps immersive and engaging user experiences that</p>
+            <a href="#img_scroll">VIEW OUR WORKS</a>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="container">
+            <address>
+                27 Division St, New York,<br>NY 10002, USA<br>
+                +1800 123 654<br><br><a href="mailto:987frisk.agency@gmail.com">987frisk.agency@gmail.com</a>
+            </address>
+        </div>
+        <p class="slogan-flexibility">UNPARALLELED FLEXIBILITY * WE GIVE UNPARALLELED FIELD</p>
+    </section>
+
+    <section id="cards">
+        <h2>WHAT WE CAN DO FOR OUR CLIENTS</h2>
+        <div class="container">
+            <div class="card_desing">
+                <h3>Branding Desing</h3>
+                <p>branding desing</p>
+                <button>VIEW DETAILS</button>
             </div>
-        </section>
-
-        <section class="banner">
-            <div class="container">
-                <address>
-                    27 Division St, New York,<br>NY 10002, USA<br>
-                    +1800 123 654<br><br><a href="mailto:987frisk.agency@gmail.com">987frisk.agency@gmail.com</a>
-                </address>
+            <div class="card_develope">
+                <h3>Website Developement</h3>
+                <p>Websitedevelopee</p>
+                <button>VIEW DETAILS</button>
             </div>
-            <p class="slogan-flexibility">UNPARALLELED FLEXIBILITY * WE GIVE UNPARALLELED FIELD</p>
-        </section>
-
-        <section id="cards">
-            <h2>WHAT WE CAN DO FOR OUR CLIENTS</h2>
-            <div class="container">
-                <div class="card_desing">
-                    <h3>Branding Desing</h3>
-                    <p>branding desing</p>
-                    <button>VIEW DETAILS</button>
-                </div>
-                <div class="card_develope">
-                    <h3>Website Developement</h3>
-                    <p>Websitedevelopee</p>
-                    <button>VIEW DETAILS</button>
-                </div>
-                <div class="card_modelling">
-                    <h3>Illustration Modelling</h3>
-                    <p>modelo de ilustracion</p>
-                    <button>VIEW DETAILS</button>
-                </div>
-                <div class="card_marketing">
-                    <h3>Sigital Marketing</h3>
-                    <p>digital marketing</p>
-                    <button>VIEW DETAILS</button>
-                </div>
+            <div class="card_modelling">
+                <h3>Illustration Modelling</h3>
+                <p>modelo de ilustracion</p>
+                <button>VIEW DETAILS</button>
             </div>
-        </section>
-
-        <section class="services">
-            <div class="container">
-                <img src="{{ url_for('static', filename='img/devs_hablando.jpeg') }}" alt="services">
-                <div class="container_del_container">
-                    <h2>WE OFFER A WIDE RANGE OF BRAND SERVICES</h2>
-                    <p>We are a creative agency working with brands building insighful strategy, creating unique desings and crafting value</p>
-                    <p class="services_list">
-                        branding<br>
-                        developpement<br>
-                        advertising<br>
-                        marketing
-                    </p>
-                </div>
+            <div class="card_marketing">
+                <h3>Sigital Marketing</h3>
+                <p>digital marketing</p>
+                <button>VIEW DETAILS</button>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="img_scroll">
-            <div class="container">
-                <h2>DISCOVER OUR SELECTED PROJECTS</h2>
-            </div>
-            <div class="scroll_container">
-                <img src="{{ url_for('static', filename='img/photo_computer.jpg') }}" alt="photo computer">
-                <img src="{{ url_for('static', filename='img/photo_devweb.jpg') }}" alt="dev web">
-                <img src="{{ url_for('static', filename='img/photo_ordi.jpg') }}" alt="pc computer">
-            </div>
-        </section>
-
-        <section class="events">
-            <div class="container">
-                <br>
-                <hr>
-
-                <h4>2025</h4>
-                <h3>New York Desing Week</h3>
-                <p>
-                    We bring to life the most complex projects, specialize
+    <section class="services">
+        <div class="container">
+            <img src="{{ url_for('static', filename='img/devs_hablando.jpeg') }}" alt="services">
+            <div class="container_del_container">
+                <h2>WE OFFER A WIDE RANGE OF BRAND SERVICES</h2>
+                <p>We are a creative agency working with brands building insighful strategy, creating unique desings and crafting value</p>
+                <p class="services_list">
+                    branding<br>
+                    developpement<br>
+                    advertising<br>
+                    marketing
                 </p>
-                <h4>MAIN DEVELOPER</h4>
-
-                <hr>
-                <br>
-                
-                <h4>2024</h4>
-                <h3>Alabhama Desing Week</h3>
-                <p>
-                    We bring to life the most complex projects, specialize
-                </p>
-                <h4>ANIMATOR</h4>
-                
-                <hr>
-                <br>
-
-                <h4>2021</h4>
-                <h3>Best Web Flow</h3>
-                <p>
-                    We bring to life the most complex projects, specialize
-                </p>
-                <h4>DEVELOPER</h4>
-
-                <hr>
-                <br>
-
-                <h4>2020</h4>
-                <h3>Berlin Interactive Award</h3>
-                <p>
-                    We bring to life the most complex projects, specialize
-                </p>
-                <h4>BEST INNOVATIONS</h4>
-
-                <hr>
-                <br>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="video">
-            <video src="" alt="">
+    <section id="img_scroll">
+        <div class="container">
+            <h2>DISCOVER OUR SELECTED PROJECTS</h2>
+        </div>
+        <div class="scroll_container">
+            <img src="{{ url_for('static', filename='img/photo_computer.jpg') }}" alt="photo computer">
+            <img src="{{ url_for('static', filename='img/photo_devweb.jpg') }}" alt="dev web">
+            <img src="{{ url_for('static', filename='img/photo_ordi.jpg') }}" alt="pc computer">
+        </div>
+    </section>
 
-            </video>
-        </section>
+    <section class="events">
+        <div class="container">
+            <br>
+            <hr>
 
-        <section id="cards_articles">
-            <h2>Read Our Articles and News</h2>
-            <div class="container">
-                <div class="card_return">
-                    <h4>March 26, 2024 - Branding</h4>
-                    <h3>Everything You Should Know About Return</h3>
-                    <button>READ MORE</button>
-                </div>
+            <h4>2025</h4>
+            <h3>New York Desing Week</h3>
+            <p>
+                We bring to life the most complex projects, specialize
+            </p>
+            <h4>MAIN DEVELOPER</h4>
 
-                <div class="card_result">
-                    <h4>March 26, 2024 - Branding</h4>
-                    <h3>6 Big Commerce Desing Tips For Big Results</h3>
-                    <button>READ MORE</button>
-                </div>
+            <hr>
+            <br>
+            
+            <h4>2024</h4>
+            <h3>Alabhama Desing Week</h3>
+            <p>
+                We bring to life the most complex projects, specialize
+            </p>
+            <h4>ANIMATOR</h4>
+            
+            <hr>
+            <br>
 
-                <div class="card_usability">
-                    <h4>March 26, 2024 - Branding</h4>
-                    <h3>Four Steps to Conduct a Successful Usability</h3>
-                    <button>READ MORE</button>
-                </div>
+            <h4>2021</h4>
+            <h3>Best Web Flow</h3>
+            <p>
+                We bring to life the most complex projects, specialize
+            </p>
+            <h4>DEVELOPER</h4>
+
+            <hr>
+            <br>
+
+            <h4>2020</h4>
+            <h3>Berlin Interactive Award</h3>
+            <p>
+                We bring to life the most complex projects, specialize
+            </p>
+            <h4>BEST INNOVATIONS</h4>
+
+            <hr>
+            <br>
+        </div>
+    </section>
+
+    <section class="video">
+        <video src="" alt="">
+
+        </video>
+    </section>
+
+    <section id="cards_articles">
+        <h2>Read Our Articles and News</h2>
+        <div class="container">
+            <div class="card_return">
+                <h4>March 26, 2024 - Branding</h4>
+                <h3>Everything You Should Know About Return</h3>
+                <button>READ MORE</button>
             </div>
-        </section>
 
-        <section id="lets_create">
-            <div class="container">
-                <h3>L'ets Create Something Great</h3>
-                <p>
-                    We shift your from today's reality to tomorrow's
-                    potential, ensuring.
-                </p>
-                <button type="button" href="#">LET'S TALK WITH US</button>
+            <div class="card_result">
+                <h4>March 26, 2024 - Branding</h4>
+                <h3>6 Big Commerce Desing Tips For Big Results</h3>
+                <button>READ MORE</button>
             </div>
-        </section>
 
-    </main>
+            <div class="card_usability">
+                <h4>March 26, 2024 - Branding</h4>
+                <h3>Four Steps to Conduct a Successful Usability</h3>
+                <button>READ MORE</button>
+            </div>
+        </div>
+    </section>
 
-    {% include 'footer.html' %}
-    
-</body>
-</html>
+    <section id="lets_create">
+        <div class="container">
+            <h3>L'ets Create Something Great</h3>
+            <p>
+                We shift your from today's reality to tomorrow's
+                potential, ensuring.
+            </p>
+            <button type="button" href="#">LET'S TALK WITH US</button>
+        </div>
+    </section>
+
+{% endblock %}

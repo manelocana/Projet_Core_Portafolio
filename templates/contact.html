@@ -1,35 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/contact.css">
-</head>
 
-<body>
-    <header>
-        <div class="container">
-            <p class="logo"><a href="home.html">LOGO WEB</a></p>
-            <nav>
-                <a href="home.html">HOME</a>
-                <a href="pages.html">PAGES</a>
-                <a href="portafolio.html">PORTAFOLIO</a>
-                <a href="blog.html">BLOG</a>
-                <a href="contact.html">CONTACT</a>
-            </nav>
-            <form class="search">
-                <button type="submit">WORK WITH US</button>
-            </form>
-        </div>
-    </header>
+{% extends 'index.html' %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+{% endblock %}
+
+{% block content %}
 
     <main>
 
         <section class="hero">
-            <img src="img/devs_hablando.jpeg" alt="contact image">
+            <img src="{{ url_for('static', filename='img/devs_hablando.jpeg') }}" alt="contact image">
             <div class="container">
                 <h1>Contact</h1>
             </div>
@@ -92,47 +73,5 @@
 
     </main>
 
-    <footer id="footer">
-        <div class="container">
-            <div class="container_left">
-                <h3>
-                    Get valuable strategy, culture and brand insights straight to your inbox
-                </h3>
-                
-                <form action="">
-                    <input type="email" id="email" name="email"  placeholder="Your email here:">
-                </form>
-
-                <p>
-                    By signing up to receive emails froms Motto, your agree
-                    to our Privacy Policy. We treat your info resposibily.
-                </p>
-
-                <h4 class="h4_contact">Contact</h4>
-                <address>
-                    27 Division St, New York,<br>
-                    NY 10002, Usa<br>
-                    <br>
-                    +1800123654987<br>
-                    <a href="emailto:987frisk.agency@mail.com">987frisk.agency@mail.com</a>
-                </address>
-            </div>
-
-            <div class="container_right">
-                <h4 class="h4_links">Links</h4>
-                <nav>
-                    <a href="#">About</a>
-                    <a href="#">Portafolio</a>
-                    <a href="#">Services</a>
-                    <a href="#">Testimonials</a>
-                    <a href="#">Careers</a>
-                </nav>
-            </div>
-
-            <small>Copyright C 2025 - manelocana.dev@gmail.com</small>
-
-        </div>
-    </footer>
+{% endblock %}
     
-</body>
-</html>
