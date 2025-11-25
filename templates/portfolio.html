@@ -9,57 +9,55 @@
 
 {% block content %}
 
-    <main>
-        <section>
-            <div class="hero">
-                <img src="{{ url_for('static', filename='img/photo_devweb.jpg') }}" alt="photo_computer">
-                <div class="container">
-                    <h2>Portfolio</h2>
-                </div>
-            </div>
-        </section>
-
-        <section id="cards_portfolio">
+    <section>
+        <div class="hero">
+            <img src="{{ url_for('static', filename='img/photo_devweb.jpg') }}" alt="photo_computer">
             <div class="container">
-
-                <div class="card_decentralized">
-                    <img src="{{ url_for('static', filename='img/Branding-design.jpg') }}" alt="Branding-design">
-                    <h3>Educational Platform</h3>
-                    <h4>Branding/ Developement/ Marketing</h4>
-                </div>
-
-                <div class="card_appbusiness">
-                    <img src="{{ url_for('static', filename='img/devs_hablando.jpeg') }}" alt="devs_hablando">
-                    <h3>Educational Platform</h3>
-                    <h4>Branding/ Developement/ Marketing</h4>
-                </div>
-
-                <div class="card_website">
-                    <img src="{{ url_for('static', filename='img/digital_marketing.jpeg') }}" alt="digital_marketing">
-                    <h3>Educational Platform</h3>
-                    <h4>Branding/ Developement/ Marketing</h4>
-                </div>
-
-                <div class="card_novascotia">
-                    <img src="{{ url_for('static', filename='img/illustration_modeling.jpeg') }}" alt="illustration_modeling">
-                    <h3>Educational Platform</h3>
-                    <h4>Branding/ Developement/ Marketing</h4>
-                </div>
-
-                <div class="card_education">
-                    <img src="{{ url_for('static', filename='img/img_desarrollo.jpeg') }}" alt="img_desarrollo">
-                    <h3>Educational Platform</h3>
-                    <h4>Branding/ Developement/ Marketing</h4>
-                </div>
-
-                <div class="card_platform">
-                    <img src="{{ url_for('static', filename='img/photo_computer.jpg') }}" alt="photo_computer">
-                    <h3>Educational Platform</h3>
-                    <h4>Branding/ Developement/ Marketing</h4>
-                </div>
-
+                <h2>Portfolio</h2>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <section id="cards_portfolio">
+        <div class="container">
+
+            <div class="card_decentralized">
+                <img src="{{ url_for('static', filename='img/Branding-design.jpg') }}" alt="Branding-design">
+                <h3>Educational Platform</h3>
+                <h4>Branding/ Developement/ Marketing</h4>
+            </div>
+
+            <div class="card_appbusiness">
+                <img src="{{ url_for('static', filename='img/devs_hablando.jpeg') }}" alt="devs_hablando">
+                <h3>Educational Platform</h3>
+                <h4>Branding/ Developement/ Marketing</h4>
+            </div>
+
+            <div class="card_website">
+                <img src="{{ url_for('static', filename='img/digital_marketing.jpeg') }}" alt="digital_marketing">
+                <h3>Educational Platform</h3>
+                <h4>Branding/ Developement/ Marketing</h4>
+            </div>
+
+            <div class="card_novascotia">
+                <img src="{{ url_for('static', filename='img/illustration_modeling.jpeg') }}" alt="illustration_modeling">
+                <h3>Educational Platform</h3>
+                <h4>Branding/ Developement/ Marketing</h4>
+            </div>
+
+            <div class="card_education">
+                <img src="{{ url_for('static', filename='img/img_desarrollo.jpeg') }}" alt="img_desarrollo">
+                <h3>Educational Platform</h3>
+                <h4>Branding/ Developement/ Marketing</h4>
+            </div>
+
+            <div class="card_platform">
+                <img src="{{ url_for('static', filename='img/photo_computer.jpg') }}" alt="photo_computer">
+                <h3>Educational Platform</h3>
+                <h4>Branding/ Developement/ Marketing</h4>
+            </div>
+
+        </div>
+    </section>
+    
 {% endblock %}
