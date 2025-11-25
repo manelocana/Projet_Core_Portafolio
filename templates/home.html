@@ -1,33 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <p class="logo"><a href="home.html">LOGO WEB</a></p>
-            <nav>
-                <a href="home.html">HOME</a>
-                <a href="pages.html">PAGES</a>
-                <a href="portafolio.html">PORTAFOLIO</a>
-                <a href="blog.html">BLOG</a>
-                <a href="contact.html">CONTACT</a>
-            </nav>
-            <form class="search">
-                <input type="text" placeholder="search...">
-                <button type="submit">SEARCH</button>
-            </form>
-        </div>
-    </header>
+{% include 'header.html' %}
 
     <main>
 
         <section class="hero">
-            <img src="img/img_desarrollo.jpeg" alt="img_desarrollo_web">
+            <img src="{{ url_for('static', filename='img/img_desarrollo.jpeg') }}" alt="img_desarrollo_web">
             <div class="container">
                 <h1>WE MAKE CREATIVE THINGS EVERYDAY</h1>
                 <p>We are digital agency that helps immersive and engaging user experiences that</p>
@@ -73,7 +49,7 @@
 
         <section class="services">
             <div class="container">
-                <img src="img/devs_hablando.jpeg" alt="services">
+                <img src="{{ url_for('static', filename='img/devs_hablando.jpeg') }}" alt="services">
                 <div class="container_del_container">
                     <h2>WE OFFER A WIDE RANGE OF BRAND SERVICES</h2>
                     <p>We are a creative agency working with brands building insighful strategy, creating unique desings and crafting value</p>
@@ -92,9 +68,9 @@
                 <h2>DISCOVER OUR SELECTED PROJECTS</h2>
             </div>
             <div class="scroll_container">
-                <img src="img/photo_computer.jpg" alt="photo computer">
-                <img src="img/photo_devweb.jpg" alt="dev web">
-                <img src="img/photo_ordi.jpg" alt="pc computer">
+                <img src="{{ url_for('static', filename='img/photo_computer.jpg') }}" alt="photo computer">
+                <img src="{{ url_for('static', filename='img/photo_devweb.jpg') }}" alt="dev web">
+                <img src="{{ url_for('static', filename='img/photo_ordi.jpg') }}" alt="pc computer">
             </div>
         </section>
 
