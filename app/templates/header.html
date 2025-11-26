@@ -2,13 +2,13 @@
 
 <header>
     <div class="container">
-        <p class="logo"><a href="{{ url_for('home') }}">LOGO WEB</a></p>
+        <p class="logo"><a href="{{ url_for('home.home') }}">LOGO WEB</a></p>
         <nav>
-            <a href="{{ url_for('home') }}">HOME</a>
-            <a href="{{ url_for('pages') }}">PAGES</a>
-            <a href="{{ url_for('portfolio') }}">PORTFOLIO</a>
-            <a href="{{ url_for('blog') }}">BLOG</a>
-            <a href="{{ url_for('contact') }}">CONTACT</a>
+            <a href="{{ url_for('home.home') }}">HOME</a>
+            <a href="{{ url_for('pages.pages') }}">PAGES</a>
+            <a href="{{ url_for('portfolio.portfolio') }}">PORTFOLIO</a>
+            <a href="{{ url_for('blog.blog') }}">BLOG</a>
+            <a href="{{ url_for('contact.contact') }}">CONTACT</a>
         </nav>
 
         {% if search_button %}
