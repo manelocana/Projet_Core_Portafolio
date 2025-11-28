@@ -317,7 +317,8 @@ header button {
     }
 
     .hero img {
-        display: none;
+        display: block;
+        width: 500px;
     }
 
     .hero {
